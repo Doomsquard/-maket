@@ -1,0 +1,90 @@
+.header {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 80px;
+	left: 0px;
+	top: 0px;
+	background: #ffffff;
+	align-items: center;
+	// margin: 0 120px;
+	font-family: Quicksand;
+	font-style: normal;
+	.header-wrapper {
+		margin: 0 120px;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+	}
+	.header-nav__list {
+		display: flex;
+		flex: 1 0 1000px;
+		justify-content: center;
+		align-items: center;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 15px;
+		text-align: center;
+		letter-spacing: 0.05em;
+		text-transform: capitalize;
+		margin-left: 75px;
+		align-items: center;
+	}
+	.header-nav__list-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 45px;
+
+		.header-nav__link {
+			text-decoration: none;
+			color: black;
+			&:hover {
+				color: rgb(107, 137, 248);
+			}
+		}
+	}
+	.header-right {
+		display: flex;
+		margin-left: auto;
+		justify-content: flex-end;
+	}
+	.header-links {
+		.header-links__list-item {
+			display: inline-block;
+			margin-right: 40px;
+		}
+	}
+	.header-login {
+		margin-left: 10px;
+		.header-login__link {
+			cursor: pointer;
+			text-decoration: none;
+		}
+		.header-login__button {
+			cursor: pointer;
+			width: 113px;
+			height: 30px;
+			border: 0;
+			background: #d2e1ff;
+			border-radius: 2px;
+			font-family: Quicksand;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 13px;
+			line-height: 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #3a79ff;
+			&:hover {
+				border: #3a79ff 2px solid;
+			}
+		}
+	}
+}
